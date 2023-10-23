@@ -1,0 +1,6 @@
+framework module Pods_C63Device_Tests {
+  umbrella header "Pods-C63Device_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

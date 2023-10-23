@@ -1,0 +1,27 @@
+PODS:
+  - C63Device (0.1.0):
+    - DeviceKit
+    - KeychainAccess
+  - DeviceKit (5.1.0)
+  - KeychainAccess (4.2.2)
+
+DEPENDENCIES:
+  - C63Device (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
+    - KeychainAccess
+
+EXTERNAL SOURCES:
+  C63Device:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  C63Device: 8aedcbda9feb22a0865a2f73b3cf0172f46913b8
+  DeviceKit: bcce5c26d9502e77e3a9fa5d1282877db388d922
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+
+PODFILE CHECKSUM: 3f1c3d8aa9095998512bbf0d06fecb3ffadb0793
+
+COCOAPODS: 1.13.0
