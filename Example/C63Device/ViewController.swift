@@ -23,8 +23,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.addSubview(button)
         button.frame.size = .init(width: 100, height: 100)
-        button.center = self.view.center
-        
+        button.frame.origin = .init(x: 100, y: 100)
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +33,8 @@ class ViewController: UIViewController {
 
     @objc private func tapGo() {
         C63DeviceOrientation.rotateToggle()
+        DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+            print(UIScreen.main.bounds)
+        }
     }
 }

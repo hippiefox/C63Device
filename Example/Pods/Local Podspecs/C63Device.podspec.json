@@ -12,7 +12,7 @@
     "HippieFox": "foxhippie5@gmail.com"
   },
   "source": {
-    "git": "https://github.com/HippieFox/C63Device.git",
+    "git": "git@github.com:hippiefox/C63Device.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -12,13 +12,28 @@ public struct C63DeviceOrientation {
 
     public static func rotateHrz() {
         C63DeviceOrientation.allowedOrientation = .landscapeRight
-        UIDevice.current.setValue(3, forKey: "orientation")
+
+        if #available(iOS 16, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: .landscapeLeft))
+            }
+        } else {
+            UIDevice.current.setValue(3, forKey: "orientation")
+        }
         UIViewController.attemptRotationToDeviceOrientation()
     }
 
     public static func rotateVtl() {
         C63DeviceOrientation.allowedOrientation = .portrait
-        UIDevice.current.setValue(1, forKey: "orientation")
+
+        if #available(iOS 16, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                windowScene.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
+            }
+        } else {
+            UIDevice.current.setValue(3, forKey: "orientation")
+        }
+
         UIViewController.attemptRotationToDeviceOrientation()
     }
 

@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  C63Device: 8aedcbda9feb22a0865a2f73b3cf0172f46913b8
+  C63Device: 39f7a8c5ec3bebccb92c8536149d7ac3125d2eed
   DeviceKit: bcce5c26d9502e77e3a9fa5d1282877db388d922
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
 
